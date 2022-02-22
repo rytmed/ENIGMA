@@ -1,3 +1,0 @@
-Céci est un méssagè tést. On va voir ce que le progr amme va r essortir par après.
-En principe, les éspàces auront dispàrus, tout commè lés accents, et les virgules.
-On à par contré fait des changements, en fait, les accénts sont partis. Pas la lettre é.
