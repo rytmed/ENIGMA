@@ -1,5 +1,7 @@
 """Programme pour les fonctions menu(), LectureMessage(fichier,mesg) et SauvegardeMessage(fichier,mesg)"""
 
+
+
 #Notre dernière fonction est un menu, qui nous permet d'afficher des choix pour l'utilisateur
 def menu():
     print(f"1. Lecture message")
