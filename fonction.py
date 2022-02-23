@@ -4,6 +4,13 @@ def menu():
           "2. Enregistrer message\n"
           "3. Cryptage/Décryptage\n"
           "4. Quitter\n")
-    int(input("Quel choix souhaitez-vous faire ?\n"))
-
+    choix=int(input("Quel choix souhaitez-vous faire ?\n"))
+    if choix==1:
+        LectureMessage()
+    elif choix==2:
+        EnregistrerMessage()
+    elif choix==3:
+        Cryptage
+    else:
+        sys.exit()
 menu()
