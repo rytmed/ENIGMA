@@ -1,0 +1,27 @@
+{
+    "rotors":[
+        {
+            "RA" : "EKMFLGDQVZNTOWYHXUSPAIBRCJ"
+        },
+        { 
+            "RB" : "AJDKSIRUXBLHWTMCQGZNPYFVOE"
+        },
+        { 
+            "RC"    : "BDFHJLCPRTXVZNYEIWGAKMUSQO"
+        },
+        { 
+            "RD"     : "ESOVPZJAYQUIRHXLNFTGKDCMWB"
+        },
+        { 
+            "RE"     : "RDOBJNTKVEHMLFCWZAXGYIPSUQ"
+        }
+    ],
+    "refleceurs": [
+        { 
+            "RFA"   : "YRUHQSLDPXNGOKMIEBFZCWVJAT"
+        },
+        { 
+            "RFB"   : "RDOBJNTKVEHMLFCWZAXGYIPSUQ"
+        }
+    ]
+}
