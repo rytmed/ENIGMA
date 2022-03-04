@@ -1,7 +1,12 @@
-def ecrire ():
-
-    fichier = open("sources.txt", "a")
-    fichier.write(input("votre message"))
+import unidecode
+def ecrire_de_message(message,nom_de_ficher):
+    
+    message = message.upper()
+    message = message.replace(" ","")
+    message = unidecode.unidecode(message)
+    fichier = open(nom_de_ficher, "a")
+    fichier.write(message)
     fichier.close()
+    return True
+print(ecrire_de_message('Gasien','sources.txt'))
 
-ecrire() 
