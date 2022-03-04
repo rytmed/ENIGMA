@@ -62,7 +62,7 @@ def cryptage(msg, list_rotors, crypt_rot):
     return msg_crypt
         
 
-print(cryptage("ECECF",["RA","RB","RC","RFA"], False))
+print(cryptage("LCIGUDFBZKRD",["RA","RB","RC","RFA"], False))
 
 #print(cryptage("BAZZETTTYY",["RA","RB","RC","RFB"]))
 """

@@ -1,28 +1,32 @@
-'''Fonction menu machine ENIGMA
-Fonctions utilisées : menu(), LectureMessage(fichier,mesg), RecMessage(fichier,mesg), Cryptage(fichier,mesg), Decryptage(fichier,mesg)'''
+def faire_choix(message):
+	false_input = True
+	while(false_input) : 
+		try :  
+			choix = int(input(message))
+			false_input = False
+		except (ValueError):
+			false_input = True
+			pass
+	return choix
 
 def menu():
 	print(f"Bienvenue dans la machine ENIGMA.\n"
-		"Plusieurs choix s'offrent à vous :\n\n"
-		"1. Lecture du message\n"
-		"2. Enregistrement du message\n"
-		"3. Cryptage/Decryptage\n"
-		"4. Quitter")
-	choix=int(input(f"Quel est votre choix ?\n"))
-	if choix==1:
-		LectureMessage(fichier,mesg)
-	elif choix==2:
-		RecMessage(fichier,mesg)
-	elif choix==3:
-		cryptochoix=input(f"Souhaitez-vous crypter le message (1) ou le décrypter (2) ?\n")
-		while type(cryptochoix)==str:
-			cryptochoix=input("Non accepté. Veuillez rentrer 1 pour crypter le message ou 2 pour le décrypter.")
-		else:
-			if choix==1:
-				Cryptage(fichier,mesg)
-			else:
-				Decryptage(fichier,mesg)
-	elif choix==4:
-		quit()
-
-menu()
+	"Plusieurs choix s'offrent à vous :\n\n"
+	"1. Lecture du message\n"
+	"2. Enregistrement du message\n"
+	"3. Cryptage\Decryptage\n"
+	"4. Quitter")
+	false_input = True
+	while false_input:
+		false_input = False
+		choix = faire_choix(f"Quel est votre choix(elle doit etre dans [1, 2, 3, 4] ) ?\n")
+		if choix == 1 :
+			pass
+		elif choix == 2 :
+			pass
+		elif choix == 3:
+			pass
+		elif choix == 4 :
+			pass
+		else :
+			false_input = True
