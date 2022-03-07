@@ -22,7 +22,7 @@ def checkInput():
             list_rotors = match[2]
         list_rotors = list_rotors.strip()
         items = list_rotors.split(" ")
-    return [msg, tuple(items)]
+    return [msg, list(items)]
 
 #print("le message est ", checkInput())
 
@@ -40,7 +40,7 @@ def cryptage(msg, list_rotors, crypt_rot):
     with open("rotors.json", "r") as f :
         data = f.read()
     dict_rotors = json.loads(data)
-    print(dict_rotors["rotors"])
+    #print(dict_rotors["rotors"])
     for item in msg :
         item_crypt = item
         for i in range(2):
@@ -48,21 +48,21 @@ def cryptage(msg, list_rotors, crypt_rot):
             for r in list_rotors_search:
                 for val in dict_rotors["rotors"]:
                     if r in val:
-                        print(r)
+                        #print(r)
                         item_crypt = rotor(item_crypt, val[r], crypt_rot)  
                         break 
             if i == 0 :    
                 for val in dict_rotors["refleceurs"]:
                     if list_rotors[-1] in val:
                         item_crypt = reflecteur(item_crypt, val[list_rotors[-1]], crypt_rot)  
-                        print(list_rotors[-1])
+                        #print(list_rotors[-1])
                         break 
             list_rotors.reverse()           
         msg_crypt += item_crypt
     return msg_crypt
         
 
-print(cryptage("LCIGUDFBZKRD",["RA","RB","RC","RFA"], False))
+#print(cryptage("LCIGUDFBZKRD",["RA","RB","RC","RFA"], False))
 
 #print(cryptage("BAZZETTTYY",["RA","RB","RC","RFB"]))
 """
